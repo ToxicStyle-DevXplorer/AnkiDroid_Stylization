@@ -1,0 +1,62 @@
+.card {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f5f9;
+  margin: 0;
+  padding: 6px;
+}
+
+.card-container {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 16px 20px;
+  max-width: 500px;
+  margin: 8px auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+}
+
+.question {
+  font-size: 21px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.question .MathJax_Display, 
+.question .MathJax_Preview,
+.question .MathJax,
+.question .mjx-chtml,
+.question math {
+  text-align: left !important;
+  margin: 10px 0 0 0 !important;
+  justify-content: flex-start !important;
+}
+
+.card-divider {
+  border: none;
+  border-top: 2px solid #e2e8f0; 
+  margin: 14px 0;
+}
+
+.answer-box {
+  background-color: #f3faf8;
+  border: 1.5px solid #dbeee9;
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.answer-box, 
+.answer-box * {
+  color: #115e52 !important;
+  font-size: 45px !important;
+}
+
+.answer-box .MathJax_Display,
+.answer-box .mjx-chtml {
+  text-align: center !important;
+  margin: 0 auto !important;
+  justify-content: center !important;
+}
