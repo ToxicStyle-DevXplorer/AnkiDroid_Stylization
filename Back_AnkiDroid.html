@@ -2,10 +2,32 @@
   <div class="question">
     {{Front}}
   </div>
-  
+
   <hr class="card-divider">
-  
+
   <div class="answer-box">
     {{Back}}
   </div>
 </div>
+
+<script>
+  (function() {
+    const box = document.querySelector('.answer-box');
+    if (box) {
+      
+      const text = box.textContent || '';
+      const len = text.trim().length;
+
+      let size = '38px'; 
+
+      if (len > 30) {
+        size = '18px';   
+      } else if (len > 15) {
+        size = '26px';   
+      }
+
+      
+      box.style.setProperty('--answer-size', size);
+    }
+  })();
+</script>
