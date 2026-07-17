@@ -25,8 +25,6 @@
 | :---: | :---: |
 | <img src="assets/front_preview.png" width="320" alt="Front Preview"> | <img src="assets/back_preview.png" width="320" alt="Back Preview"> |
 
-> ⚠️ *Чтобы обновить превью выше, создайте папку `assets` в репозитории и загрузите туда свои скриншоты с именами `front_preview.png` и `back_preview.png`.*
-
 ---
 
 ## 🚀 Установка / How to Install
