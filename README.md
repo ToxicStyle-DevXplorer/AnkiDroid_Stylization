@@ -1,54 +1,39 @@
 # ⚡️ AnkiDroid Neon Light Theme
 
-> **A clean, minimalist white theme for Anki and AnkiDroid with vibrant neon accents and smart responsive text sizing.**  
-> Легкая минималистичная светлая тема для Anki и AnkiDroid с яркими неоновыми акцентами и умной адаптацией размера шрифта.
+> **An ultra-clean, high-performance minimalist theme for Anki and AnkiDroid featuring CSS3 custom properties, dynamic client-side font scaling, and optimized MathJax typesetting.**
 
 [![Anki Version](https://img.shields.io/badge/Anki-2.1%2B-d946ef?style=flat-square&logo=anki&logoColor=white)](https://apps.ankiweb.net/)
 [![AnkiDroid](https://img.shields.io/badge/AnkiDroid-Compatible-10b981?style=flat-square&logo=android&logoColor=white)](https://github.com/ankidroid/Anki-Android)
-[![Style](https://img.shields.io/badge/Style-Neon_Minimalism-06b6d4?style=flat-square)](#)
+[![Language](https://img.shields.io/badge/Language-HTML5%20%2F%20CSS3%20%2F%20JS-06b6d4?style=flat-square)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 ---
 
-## ✨ Особенности / Features
+## 🚀 Project Overview
 
-* 🤍 **Кибер-минимализм:** Идеально белый фон карточек, который не перегружает интерфейс и помогает сфокусироваться.
-* ⚡️ **Неоновые акценты:** Яркие бирюзовые, пурпурные и зеленые маркеры для мгновенного визуального разделения элементов.
-* 📏 **Умный размер ответа (JS Auto-scale):** Шрифт автоматически уменьшается, если ответ длинный, чтобы он гарантированно помещался в неоновую рамку на любом экране.
-* 📐 **MathJax & LaTeX:** Математические формулы и выражения аккуратно подсвечиваются мягким неоново-пурпурным цветом.
-* 📱 **Адаптивность:** Полная отзывчивость — отлично смотрится как на экранах мобильных телефонов, так и в десктопной версии.
+This repository provides a lightweight, production-ready frontend template designed to optimize active recall and spaced repetition interfaces within **Anki** and **AnkiDroid**. By combining modern web technologies (HTML5, CSS3, ES6 JavaScript), this theme delivers an distraction-free visual environment accented by vibrant, high-contrast neon highlights. 
+
+Additionally, it implements dynamic DOM text measurement algorithms to solve rendering and text-overflow issues on mobile viewports.
 
 ---
 
-## 📸 Скриншоты / Screenshots
+## ✨ Features & Architecture
 
-| Передняя сторона (Front) | Обратная сторона (Back) |
-| :---: | :---: |
-| <img src="assets/front_preview.png" width="320" alt="Front Preview"> | <img src="assets/back_preview.png" width="320" alt="Back Preview"> |
-
-> ⚠️ *Чтобы обновить превью выше, создайте папку `assets` в репозитории и загрузите туда свои скриншоты с именами `front_preview.png` и `back_preview.png`.*
-
----
-
-## 🚀 Установка / How to Install
-
-### Шаг 1. Настройка стилей (CSS)
-1. Откройте **Anki** на компьютере или **AnkiDroid** на телефоне.
-2. Перейдите в меню управления типами записей (**Manage Note Types**) -> выберите свой тип карты -> нажмите кнопку **Карты (Cards)**.
-3. Скопируйте весь код из файла `Style_AnkiDroid.css`[cite: 2] и вставьте его в поле **Стили (Styling)**.
-
-### Шаг 2. Настройка шаблонов (HTML)
-* **Передняя сторона:** Скопируйте код из файла `Front_AnkiDroid.html`[cite: 3] и вставьте его в поле **Шаблон передней стороны (Front Template)**.
-* **Обратная сторона:** Скопируйте код из файла `Back_AnkiDroid.html`[cite: 1] и вставьте его в поле **Шаблон обратной стороны (Back Template)**.
+* 🤍 **Cyber-Minimalist Design:** Utilizes a high-contrast white card-container to eliminate cognitive load and maximize user focus during long study sessions.
+* 📏 **Dynamic Text Auto-Scaling:** Integrates an active ES6 JavaScript micro-engine on the back card template. The script measures the textual length of the answer dynamically, applying step-down font sizes to prevent layout breaking or text-overflow on smaller mobile viewports.
+* 📐 **MathJax & LaTeX Engine Integration:** Explicit styling override hooks designed for mathematical rendering, utilizing deep glow text shadows to highlight formulas without sacrificing legibility.
+* 📱 **Viewport Agnostic (Responsive):** Styled from the ground up using modern CSS flexible box models (`Flexbox`), ensuring consistent rendering across Desktop clients, tablets, and smartphones.
 
 ---
 
-## 🛠️ Кастомизация / Customization
+## 📂 Repository Structure
 
-Вы можете легко изменить три главных неоновых цвета под себя. Для этого отредактируйте переменные в самом верху файла `Style_AnkiDroid.css`[cite: 2]:
-
-```css
-:root {
-  --neon-cyan: #06b6d4;    /* Цвет рамки карточки */
-  --neon-purple: #d946ef;  /* Цвет формул в вопросе */
-  --neon-green: #10b981;   /* Цвет правильного ответа */
-}
+```directory
+AnkiDroid_Stylization/
+├── Front_AnkiDroid.html   # Front card HTML template structure
+├── Back_AnkiDroid.html    # Back card template incorporating the auto-scale script
+├── Style_AnkiDroid.css    # Centralized stylesheet using CSS variables
+├── LICENSE                # MIT License
+└── assets/                # Directory containing preview assets
+    ├── front_preview.png
+    └── back_preview.png
